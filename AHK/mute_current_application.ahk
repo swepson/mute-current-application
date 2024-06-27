@@ -1,6 +1,6 @@
 #Include %A_ScriptDir%\VA.ahk
 
-F1::  ; F1 hotkey - toggle mute state of active window
++F9::  ; Shift+F9 hotkey - toggle mute state of active window
   WindowEXE := WinExist("A")
     ControlGetFocus, FocusedControl, ahk_id %WindowEXE%
     ControlGet, Hwnd, Hwnd,, %FocusedControl%, ahk_id %WindowEXE%
